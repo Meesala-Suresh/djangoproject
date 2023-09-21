@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="" align="center">
+      <h1>Student Pay Fees</h1>
+      <form method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" name="" value="Submit Pay">
+        <a class="btn btn_primary btn-lg" href="/list" role="button">Student Balance List</a>
+        <a href="/accounts/logout">Logout</a>
+      </form>
+    </div>
+  </body>
+</html>

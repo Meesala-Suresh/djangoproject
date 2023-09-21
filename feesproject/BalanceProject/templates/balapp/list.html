@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="" align='center'>
+      <h1>Student Balance List</h1>
+      <table border="1">
+        <thead>
+          <th>Student Name</th>
+          <th>Total Fees</th>
+          <th>PaidFees</th>
+          <th>Balance Fees</th>
+        </thead>
+        {% for bal in bal_list %}
+        <tr>
+          <td>{{bal.name}}</td>
+          <td>{{bal.totalfees}}</td>
+          <td>{{bal.paidfees}}</td>
+          <td>{{bal.feebal}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </body>
+</html>
